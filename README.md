@@ -6,20 +6,20 @@ Cette collection présente une variété de projets de développement web couvra
 
 ## Aperçu
 
-1. **Nom du Projet 1 :**
-   - Description : [Fournissez une brève description du projet, son objectif et les technologies utilisées. Incluez des liens vers la démo ou le déploiement en direct s'ils sont disponibles.]
+1. **pong-game**  
+- Ce projet full stack propose une expérience multijoueur interactive où les joueurs peuvent s'affronter dans des parties de [Pong](https://www.google.com/search?q=pong). Ajoutez des amis, lancez des défis, et communiquez via le chat intégré. Choisissez d'activer ou non l'identification à deux facteurs, de personnaliser votre profil en modifiant votre avatar, votre nom d'utilisateur, etc.
 
-2. **Nom du Projet 2 :**
-   - Description : [Répétez la structure pour chaque projet de votre dépôt.]
+<p align="right">
+   <img width="24" height="24" src="https://img.icons8.com/color/48/000000/typescript.png" alt="typescript" /> TypeScript&nbsp;
+   <img width="24" height="24" src="https://img.icons8.com/fluency/48/docker.png" alt="docker"/> Docker&nbsp;
+   <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="react"/> React&nbsp;
+   <img width="24" height="24" src="https://img.icons8.com/color/48/nestjs.png" alt="nestjs"/> NestJS&nbsp;
+</p>
+
+2. **parallel-social-media**
+   - Description
 
 3. ...
-
-## Technologies
-
-- Front-end : HTML, CSS, JavaScript, React, etc.
-- Back-end : Node.js, Express, Django, Flask, etc.
-- Base de données : MongoDB, MySQL, PostgreSQL, etc.
-- Outils Supplémentaires : Git, Docker, etc.
 
 ## Démarrage
 
