@@ -1,0 +1,1 @@
+export const dotenv = import.meta.env

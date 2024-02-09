@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    ports:
+    - "5432:5432"
+    volumes:
+    - ./data/postgres:/data/postgres
+    env_file:
+    - ./.env
+    networks:
+    - ft_transcendance
+    restart: always
+
+  back-end:
+    build:
+      context: ./back-end
+      dockerfile: Dockerfile
+    container_name: back-end
+    ports:
+    - "3000:3000"
+    - "5555:5555"
+    env_file:
+    - ./back-end/.env
+    depends_on:
+    - postgres
+    networks:
+    - ft_transcendance
+
+  front-end:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    container_name: front-end
+    ports:
+    - "5173:5173"
+    env_file:
+    - ./front-end/.env
+    networks:
+    - ft_transcendance
+ 
+networks:
+  ft_transcendance:
+    driver: bridge

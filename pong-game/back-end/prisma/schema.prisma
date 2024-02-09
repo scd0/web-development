@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id      String   @id @default(uuid())
+  name    String?  @unique
+  email   String
+  avatar  String
+  tfa     Boolean
+  logged  Boolean  @default(false)
+  friends String[] @default([])
+  blocked String[] @default([])
+  wins    Int      @default(0)
+  losses  Int      @default(0)
+}
+
+model Conversation {
+  id       String @id @default(uuid())
+  uid1     String
+  uid2     String
+  messages Json[] @default([])
+}
+
+model Channel {
+  id             String   @id @default(uuid())
+  name           String   @unique
+  private        Boolean  @default(false)
+  password       String
+  owner          String
+  administrators String[] @default([])
+  members        String[] @default([])
+  banned         String[] @default([])
+  muted          String[] @default([])
+  messages       Json[]   @default([])
+}
+
+model Match {
+  id    String  @id @default(uuid())
+  left  String
+  right String?
+  done  Boolean @default(false)
+  score String?
+}
