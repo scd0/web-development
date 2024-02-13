@@ -11,7 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Accueil", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+              src="/2.jpg"
               alt="Ricardo portrait"
               width="192"
               height="192"
@@ -63,7 +63,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         Bonjour, je m'appelle <span className="font-semibold">Léo</span>.<br/>Je suis <span className="font-semibold">développeur</span>
-        &nbsp;low-level, full-stack, et <span className="font-semibold">rétro-ingénieur</span>.
+        &nbsp;full-stack, bas-niveau, et <span className="font-semibold">rétro-ingénieur</span>.
       </motion.h1>
 
       <motion.div

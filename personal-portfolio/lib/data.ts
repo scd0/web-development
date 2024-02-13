@@ -11,23 +11,23 @@ import pongImg from "@/public/pong.jpeg";
 
 export const links = [
   {
-    name: "Home",
+    name: "Accueil",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Présentation",
     hash: "#about",
   },
   {
-    name: "Skills",
+    name: "Compétences",
     hash: "#skills",
   },
   {
-    name: "Projects",
+    name: "Projets",
     hash: "#projects",
   },
   {
-    name: "Experience",
+    name: "Formation",
     hash: "#experience",
   },
 ] as const;
