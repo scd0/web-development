@@ -124,6 +124,9 @@ export const fsSkillsData = [
   "MongoDB",
   "Redux",
   "Express",
+  "SQLite",
+  "Firebird",
+  "MySQL",
   "PostgreSQL",
   "Framer Motion",
   "Appwrite",
@@ -152,5 +155,7 @@ export const llSkillsData = [
   "x64dbg",
   "VMWare",
   "VirtualBox",
-  "dnSpy"
+  "dnSpy",
+  "NGINX",
+  "Apache"
 ] as const;
