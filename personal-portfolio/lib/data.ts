@@ -43,7 +43,7 @@ export const experiencesData = [
   {
     title: "Université",
     location: "Lille, FR",
-    description: "J'ai choisi la spécialité informatique, mais je n'ai pas appris beaucoup de choses là-bas.",
+    description: "J'ai choisi la spécialité mathématiques-informatique.",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2021",
   },
